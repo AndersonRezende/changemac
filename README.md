@@ -2,7 +2,7 @@ ChangeMac
 ==============
 Simple Shell Script to change mac from linux based systems
 
-# changemac
+# Description
 Leave some frequently used mac addresses saved or enter a new mac address
 
 ### Installation
