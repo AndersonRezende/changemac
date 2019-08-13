@@ -1,11 +1,13 @@
 #!/bin/bash
 
+cardname="wlp3s0"
+
 function mudarMac ()
 {
-	sudo ifconfig wlp3s0 down
-	sudo ifconfig wlp3s0 hw ether $1
-	sudo ifconfig wlp3s0 up
-	echo "Your new mac $ 1 has been set up"
+	sudo ifconfig $cardname down
+	sudo ifconfig $cardname hw ether $1
+	sudo ifconfig $cardname up
+	echo "Your new mac $1 has been set up on Network Card $cardname"
 }
 
 echo "Enter option:"
